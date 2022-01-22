@@ -13,3 +13,6 @@ docker run --privileged -it --rm --name goofys \
     -e AWS_SECRET_ACCESS_KEY=<secret-key>
     goofys
 ```
+
+## Published on Docker Hub
+https://hub.docker.com/r/backinbash/goofys-docker
