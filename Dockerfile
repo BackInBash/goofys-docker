@@ -11,6 +11,7 @@ COPY syslog-ng.conf /etc/syslog-ng/syslog-ng.conf
 
 # Copy binary
 COPY --from=build-stage goofys /usr/bin/goofys
+RUN chmod +x /usr/bin/goofys
 COPY run.sh /root/run.sh
 
 ENTRYPOINT [ "/root/run.sh" ]
